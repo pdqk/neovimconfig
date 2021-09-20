@@ -21,3 +21,6 @@ let g:airline#extensions#tabline#enabled = 1
 
 inoremap <silent><expr> <Tab>
       \ pumvisible() ? "\<C-n>" : "\<TAB>"
+      
+highlight Normal ctermbg=none
+highlight NonText ctermbg=none
