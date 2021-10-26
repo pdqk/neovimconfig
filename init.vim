@@ -5,6 +5,7 @@ set shiftwidth=2
 set expandtab
 set smartindent
 set number
+set relativenumber
 
 nmap <C-H> <C-W><C-H>
 nmap <C-J> <C-W><C-J>
@@ -15,6 +16,7 @@ nmap <C-F> :FZF<ENTER>
 nmap <C-P> :Rg<ENTER>
 nmap <C-.> <leader>a<ENTER>
 nmap <C-B> :Format<ENTER>
+nmap <C-T> :CocList --input=flutter commands<ENTER>
 
 let g:airline_powerline_fonts = 1
 let g:airline#extensions#tabline#enabled = 1
@@ -24,3 +26,5 @@ inoremap <silent><expr> <Tab>
       
 highlight Normal ctermbg=none
 highlight NonText ctermbg=none
+
+nmap <leader>a <Plug>(coc-codeaction-selected)
